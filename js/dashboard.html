@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Dashboard</title>
+
+<link rel="stylesheet"
+href="css/style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+
+<img src="images/logo.svg">
+
+<h2>NUSANTARA SHIPPING</h2>
+
+</div>
+
+<button onclick="logout()">
+Logout
+</button>
+
+</header>
+
+<section class="hero">
+
+<h1>
+Sistem Tarif Pelayaran
+</h1>
+
+<p>
+Kelola dan hitung tarif
+pengiriman laut Indonesia
+</p>
+
+</section>
+
+<section class="tarif-box">
+
+<h2>
+Kalkulator Tarif
+</h2>
+
+<label>
+Pelabuhan Asal
+</label>
+
+<select id="asal">
+
+<option>Surabaya</option>
+<option>Jakarta</option>
+<option>Makassar</option>
+
+</select>
+
+<label>
+Pelabuhan Tujuan
+</label>
+
+<select id="tujuan">
+
+<option>Batam</option>
+<option>Balikpapan</option>
+<option>Jayapura</option>
+
+</select>
+
+<label>
+Berat Barang (Ton)
+</label>
+
+<input
+type="number"
+id="berat">
+
+<button
+onclick="hitungTarif()">
+
+Hitung
+
+</button>
+
+<h3 id="hasil"></h3>
+
+</section>
+
+<script src="js/tarif.js"></script>
+
+</body>
+</html>
